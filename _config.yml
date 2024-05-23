@@ -1,7 +1,7 @@
 # Site settings
 title: Jekyll-Uno
 description: 'Jekyll-Uno - a minimal, responsive theme for Jekyll'
-url: 'https://chxuru.com/jekyll-uno'
+url: 'http://chxuru.github.io/jekyll-uno'
 baseurl: '/jekyll-uno'
 # google_analytics: 'UA-XXXXXX-X'
 # disqus_shortname: 'your-disqus-name'
