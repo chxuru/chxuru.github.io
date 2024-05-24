@@ -14,13 +14,6 @@ permalink: /404.html
             height: 100%;
             margin: 0;
         }
-        .container {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            min-height: 100vh;
-            text-align: center;
-        }
         .site-main {
             display: flex;
             flex-direction: column;
@@ -38,14 +31,12 @@ permalink: /404.html
     </style>
 </head>
 <body>
-    <div class="container">
-        <main class="site-main">
-            <p>Was this what you were looking for? No? Oh well...</p>
-            <img src="{{ '/images/cat.gif' | relative_url }}" alt="Cat GIF" class="centered-image">
-            <div class="spacer"></div>
-            <div class="spacer"></div>
-            <p class="bottom-link"><a href="{{ site.baseurl }}/">Return to the homepage</a></p>
-        </main>
-    </div>
+    <main class="site-main">
+        <p>Was this what you were looking for? No? Oh well...</p>
+        <img src="{{ '/images/cat.gif' | relative_url }}" alt="Cat GIF" class="centered-image">
+        <div class="spacer"></div>
+        <div class="spacer"></div>
+        <p class="bottom-link"><a href="{{ site.baseurl }}/">Return to the homepage</a></p>
+    </main>
 </body>
 </html>
