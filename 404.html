@@ -1,0 +1,29 @@
+---
+layout: default
+title: "404: Page Not Found"
+permalink: /404.html
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+</head>
+<body>
+    <div class="container">
+        <header class="site-header">
+            <h1 class="site-title">{{ site.title }}</h1>
+        </header>
+        <main class="site-main">
+            <h1>{{ page.title }}</h1>
+            <p>Sorry, but the page you were trying to view does not exist.</p>
+            <p><a href="{{ site.baseurl }}/">Return to the homepage</a></p>
+        </main>
+        <footer class="site-footer">
+            <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
