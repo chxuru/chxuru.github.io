@@ -15,6 +15,7 @@ permalink: /404.html
             justify-content: center;
             align-items: center;
             flex-direction: column;
+            text-align: center;
         }
         .centered-image {
             max-width: 50%;
@@ -23,12 +24,10 @@ permalink: /404.html
 </head>
 <body>
     <div class="container">
-        <main class="site-main">
+        <main class="site-main centered-wrapper">
             <h1>{{ page.title }}</h1>
             <p>Was this what you were looking for? No? Oh well...</p>
-            <div class="centered-wrapper">
-                <img src="{{ '/images/cat.gif' | relative_url }}" alt="Cat GIF" class="centered-image">
-            </div>
+            <img src="{{ '/images/cat.gif' | relative_url }}" alt="Cat GIF" class="centered-image">
             <p><a href="{{ site.baseurl }}/">Return to the homepage</a></p>
         </main>
     </div>
