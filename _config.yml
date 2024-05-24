@@ -35,4 +35,4 @@ kramdown:
   hard_wrap: false
 
 plugins: ['jekyll-paginate']
-exclude: ['Gemfile', 'Gemfile.lock']
+exclude: ['Gemfile', 'Gemfile.lock', '/404.html']
