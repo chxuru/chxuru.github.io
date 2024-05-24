@@ -15,6 +15,10 @@ permalink: /404.html
         <main class="site-main">
             <h1>{{ page.title }}</h1>
             <p>Sorry, but the page you were trying to view does not exist.</p>
+            <video width="320" height="240" controls>
+                <source src="{{ '/images/cat.mp4' | relative_url }}" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
             <p><a href="{{ site.baseurl }}/">Return to the homepage</a></p>
         </main>
     </div>
