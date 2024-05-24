@@ -10,26 +10,41 @@ permalink: /404.html
     <title>{{ page.title }}</title>
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
     <style>
-        .centered-wrapper {
+        body, html {
+            height: 100%;
+            margin: 0;
+        }
+        .container {
             display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            min-height: 100vh;
+            text-align: center;
+        }
+        .site-main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
-            flex-direction: column;
-            text-align: center;
         }
         .centered-image {
             max-width: 50%;
+        }
+        .bottom-link {
+            margin-bottom: 20px;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <main class="site-main centered-wrapper">
+        <main class="site-main">
             <h1>{{ page.title }}</h1>
             <p>Was this what you were looking for? No? Oh well...</p>
             <img src="{{ '/images/cat.gif' | relative_url }}" alt="Cat GIF" class="centered-image">
-            <p><a href="{{ site.baseurl }}/">Return to the homepage</a></p>
         </main>
+        <p class="bottom-link"><a href="{{ site.baseurl }}/">Return to the homepage</a></p>
     </div>
 </body>
 </html>
