@@ -27,7 +27,7 @@ permalink: /404.html
             justify-content: flex-start;
             align-items: center;
             flex-grow: 1;
-            padding-top: 20px; /* Adjust this to control top spacing */
+            padding-top: 20px;
         }
         .centered-image {
             max-width: 50%;
@@ -36,21 +36,20 @@ permalink: /404.html
             margin-bottom: 20px;
         }
         .spacer {
-            height: 10px; /* Adjust the height for spacing */
+            height: 10px;
         }
         .small-spacer {
-            height: 5px; /* Smaller spacer for less space between image and link */
+            height: 5px;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <main class="site-main">
-            <h1>{{ page.title }}</h1>
             <p>Was this what you were looking for? No? Oh well...</p>
             <div class="spacer"></div>
             <img src="{{ '/images/cat.gif' | relative_url }}" alt="Cat GIF" class="centered-image">
-            <div class="small-spacer"></div>
+            <div class="spacer"></div>
             <p class="bottom-link"><a href="{{ site.baseurl }}/">Return to the homepage</a></p>
         </main>
     </div>
