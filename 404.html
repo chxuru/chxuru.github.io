@@ -21,11 +21,15 @@ permalink: /404.html
         .content {
             font-size: 3em; /* Adjust the font size as needed */
             font-weight: bold;
+            max-width: 100%; /* Ensure it doesn't exceed the available width */
+            box-sizing: border-box; /* Include padding and border in the element's total width and height */
         }
 
         .content h1,
         .content p {
-            display: inline-block; /* Prevents wrapping onto new lines */
+            display: block; /* Ensures they behave as block-level elements */
+            margin: 0; /* Removes default margin */
+            padding: 0; /* Removes default padding */
         }
     </style>
 </head>
