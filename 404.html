@@ -1,6 +1,5 @@
 ---
 layout: default
-title: "404: Page Not Found"
 permalink: /404.html
 ---
 
@@ -10,17 +9,24 @@ permalink: /404.html
     <meta charset="UTF-8">
     <title>{{ page.title }}</title>
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+    <style>
+        .full-page {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            font-size: 5em;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
-        <main class="site-main">
-            <h1>{{ page.title }}</h1>
-            <p>Sorry, but the page you were trying to view does not exist.</p>
-            <p><a href="{{ site.baseurl }}/">Return to the homepage</a></p>
-        </main>
-        <footer class="site-footer">
-            <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}. All rights reserved.</p>
-        </footer>
+    <div class="full-page">
+        <div>
+            <h1>404 NOT FOUND</h1>
+            <p>GO AWAY</p>
+        </div>
     </div>
 </body>
 </html>
