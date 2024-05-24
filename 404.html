@@ -3,39 +3,41 @@ layout: default
 permalink: /404.html
 ---
 
-<div class="post">
-  <h1 class="post-title">404: Page Not Found</h1>
-  <p>Oops! The page you are looking for does not exist. It might have been moved or deleted.</p>
-  <ul>
-    <li><a href="{{ site.baseurl }}/">Take Me Back!</a></li>
-  </ul>
+<div class="container">
+  <section class="error-404 not-found text-center">
+    <h1 class="title">404</h1>
+    <p class="message">Oops! The page you are looking for does not exist.</p>
+    <a class="button" href="{{ site.baseurl }}/">Go to Home Page</a>
+  </section>
 </div>
 
 <style>
-  .post {
-    text-align: center;
-    margin-top: 50px;
+  .error-404 {
+    padding: 100px 0;
   }
-  .post-title {
-    font-size: 3em;
+
+  .error-404 .title {
+    font-size: 72px;
+    margin-bottom: 20px;
+    color: #FF6347; /* Tomato color */
   }
-  p {
-    font-size: 1.2em;
+
+  .error-404 .message {
+    font-size: 24px;
+    margin-bottom: 40px;
   }
-  ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  ul li {
-    display: inline;
-    margin: 0 10px;
-  }
-  ul li a {
+
+  .error-404 .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
     text-decoration: none;
-    color: #007acc;
-    font-weight: bold;
+    font-size: 16px;
+    border-radius: 5px;
   }
-  ul li a:hover {
-    text-decoration: underline;
+
+  .error-404 .button:hover {
+    background-color: #555;
   }
 </style>
