@@ -38,6 +38,9 @@ permalink: /404.html
         .spacer {
             height: 10px; /* Adjust the height for spacing */
         }
+        .small-spacer {
+            height: 5px; /* Smaller spacer for less space between image and link */
+        }
     </style>
 </head>
 <body>
@@ -47,6 +50,7 @@ permalink: /404.html
             <p>Was this what you were looking for? No? Oh well...</p>
             <div class="spacer"></div>
             <img src="{{ '/images/cat.gif' | relative_url }}" alt="Cat GIF" class="centered-image">
+            <div class="small-spacer"></div>
         </main>
         <p class="bottom-link"><a href="{{ site.baseurl }}/">Return to the homepage</a></p>
     </div>
