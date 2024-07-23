@@ -6,9 +6,9 @@ baseurl: ''
 
 author:
   name: 'Justin SP'
-  twitter_username: chxuru
-  github_username:  chxuru
-  linkedin_username:  justinsp
+  #twitter_username: chxuru
+  #github_username:  chxuru
+  #linkedin_username:  justinsp
 
 defaults:
   -
